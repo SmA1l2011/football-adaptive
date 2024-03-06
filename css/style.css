@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    font-size: 14rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #8dc63f;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.wrapper {
+    padding: 0 10px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 25px 15px;
+}
+
+header p {
+    font-size: 22px;
+    color: #39930d;
+    font-family: "Arial";
+    margin-right: 35px;
+}
+
+header b {
+    font-size: 44px;
+    color: #39930d;
+    font-weight: bold;
+    font-family: "Arial";
+    display: block;
+}
+
+header i {
+    font-size: 14px;
+    color: #5a5a5a;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.contacts a {
+    font-size: 22px;
+    color: #39930d;
+    font-family: "Arial";
+    text-decoration: none;
+    display: block;
+}
+
+.contacts {
+    text-align: center;
+}
+
+main {
+    background: #fff;
+    padding: 0 15px;
+}
+
+.main-picture img {
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 70%;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info h1 {
+    font-size: 24px;
+    color: #39930d;
+    font-weight: bold;
+    font-family: "Arial";
+    margin: 20px 0;
+}
+
+.info p {
+    max-width: 595px;
+    margin-bottom: 20px;
+    line-height: 21px;
+    color: #343434;
+    font-family: "Arial";
+}
+
+.text {
+    padding-bottom: 25px;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.nav h2 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 7px;
+    color: #ffffff;
+    font-family: "Arial";
+    min-width: 300px;
+    padding: 18px 20px;
+    background-color: #39930d;
+    margin: 0 0 10px -20px;
+}
+
+.nav a {
+    display: block;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #39930d;
+    font-family: "Arial";
+    transition: all 0.5s ease;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    padding: 0 40px;
+    color: #fff;
+    background-color: #343434;
+}
+
+footer {
+    background-color: #39930d;
+    padding: 13px 15px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+@media screen and (min-width: 610px) {
+    .flex {
+        justify-content: space-between;
+    }
+
+    .contacts {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .nav h2 {
+        margin: 0 0 10px 0;
+    }
+
+    .nav a {
+        padding: 0 20px;
+    }
+}
