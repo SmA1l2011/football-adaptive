@@ -26,14 +26,12 @@ body {
 
 .flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 header {
     flex-wrap: wrap;
-    align-items: flex-start;
     padding: 25px 15px;
 }
 
@@ -41,7 +39,7 @@ header p {
     font-size: 22px;
     color: #39930d;
     font-family: "Arial";
-    margin-right: 35px;
+    margin: 0 35px 20px 0;
 }
 
 header b {
@@ -59,21 +57,23 @@ header i {
     font-family: "Arial";
 }
 
+.logo img {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .contacts a {
     font-size: 22px;
     color: #39930d;
     font-family: "Arial";
     text-decoration: none;
     display: block;
-}
-
-.contacts {
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 main {
     background: #fff;
-    padding: 0 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .main-picture img {
@@ -83,11 +83,8 @@ main {
     object-position: 70%;
 }
 
-.text {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.info {
+    max-width: 595px;
 }
 
 .info h1 {
@@ -99,7 +96,6 @@ main {
 }
 
 .info p {
-    max-width: 595px;
     margin-bottom: 20px;
     line-height: 21px;
     color: #343434;
@@ -110,26 +106,29 @@ main {
     padding-bottom: 25px;
 }
 
-.nav ul {
-    list-style: none;
-    padding-left: 5px;
+.nav {
+    padding-top: 20px;
 }
 
-.nav h2 {
+.nav ul {
+    list-style: none;
+}
+
+.nav p {
     display: inline-block;
     font-size: 18px;
-    line-height: 7px;
     color: #ffffff;
     font-family: "Arial";
-    min-width: 300px;
-    padding: 18px 20px;
+    min-width: 270px;
+    padding: 12px 20px;
     background-color: #39930d;
-    margin: 0 0 10px -20px;
+    margin: 0 0 10px 0;
 }
 
 .nav a {
     display: block;
     line-height: 30px;
+    padding: 0 20px;
     text-transform: uppercase;
     color: #39930d;
     font-family: "Arial";
@@ -137,8 +136,8 @@ main {
 }
 
 .nav a:hover {
+    transform: translateX(15px);
     text-decoration: none;
-    padding: 0 40px;
     color: #fff;
     background-color: #343434;
 }
@@ -154,9 +153,23 @@ footer p {
     font-family: "Arial";
 }
 
+@media screen and (min-width: 768px) {
+    .logo img {
+        margin-bottom: unset;
+    }
+
+    .logo p {
+        margin-bottom: unset;
+    }
+}
+
 @media screen and (min-width: 610px) {
     .flex {
         justify-content: space-between;
+    }
+
+    .nav p {
+        min-width: 300px;
     }
 
     .contacts {
