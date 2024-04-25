@@ -136,7 +136,6 @@ main {
 }
 
 .nav a:hover {
-    transform: translateX(15px);
     text-decoration: none;
     color: #fff;
     background-color: #343434;
